@@ -66,7 +66,7 @@ else:
 	dev.baudrate = 1000000
 	dev.ftdi_fn.ftdi_set_line_property(8, 1, 0)
 	dev.ftdi_fn.ftdi_setflowctrl(0)
-	ftdi_fn.ftdi_set_latency_timer(500)
+	dev.ftdi_fn.ftdi_set_latency_timer(500)
 
 # generate read eeprom struct command
 cmd = []
